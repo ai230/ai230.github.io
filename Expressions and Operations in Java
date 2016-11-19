@@ -1,0 +1,15 @@
+public class Main {
+
+	public static void main(String[] args) {
+		int a = 0;
+		int b = a + 1;
+		int c = (2*3)+5*4;
+		int d = c++;
+		int f = --c;
+		
+		System.out.println(d);
+		System.out.println(d+1);
+		System.out.println(c%2);
+		System.out.println(3+4+f*2);
+	}
+}
