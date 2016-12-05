@@ -1,6 +1,6 @@
 # Ai Portfolio
 
-##Course Program
+###WEB AND MOBILE APPLICATION DEVELOPMENT DIPLOMA
  - [x] Wireless and Mobile technology – MADP 101
       - scratch
  - [x] Web Development for Mobile Devices – MADP 102
