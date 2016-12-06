@@ -15,3 +15,16 @@
  - [ ] Android App Development and Project for Android – MADP 301
  - [ ] C, Objective C an Swift - MADP 401
  - [ ] iOS App Development and Project for iOS – MADP 402
+
+###I am going to study
+ - HTML
+ - CSS
+ - JAVASCRIPT
+ - SQL
+ - PHP
+ - BOOTSTRAP
+ - JQUERY
+ - ANGULAR
+ - XML
+ - W3.CSS
+ - Wordpress
