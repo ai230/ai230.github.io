@@ -1,0 +1,62 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-weight: 300;
+}
+
+.container{
+  margin-left: 10;
+  margin-right: 10;
+  margin-top: 10;
+  margin-bottom: 10;
+}
+
+.text-underline {
+    text-decoration:underline;
+    /*text-decoration:none;*/
+    /*border-bottom:solid 1px black ;*/
+}
+
+.m80{
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.text-pink {
+    color: #F7084D;
+}
+
+.text-white{
+  color:white;
+}
+
+.text-brightgrayishcyan{
+  color:#85afae;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
+.font-80 {
+    font-size: 80px;
+}
+
+.title-logo {
+        margin-top: 20px;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-gray{
+  background-color: gray;
+}
