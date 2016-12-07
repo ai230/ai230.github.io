@@ -18,10 +18,15 @@ body {
     /*border-bottom:solid 1px black ;*/
 }
 
+.m40{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 .m80{
   margin-bottom: 80px;
   margin-top: 80px;
 }
+
 
 .text-pink {
     color: #F7084D;
@@ -29,6 +34,33 @@ body {
 
 .text-white{
   color:white;
+}
+
+.btn a{
+  border-radius: 12px;
+  border: #000000 solid 2px;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px 25px;
+}
+
+.btn_green{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  height: 151%
+}
+
+.btn_green a{
+  margin-top: 10px;
+  border-radius: 12px;
+  border: #4D7A35 solid 2px;
+  color: #4D7A35;
+  font-size: 16px;
+  padding: 5px 25px;
 }
 
 .text-brightgrayishcyan{
@@ -48,7 +80,7 @@ body {
 }
 
 .title-logo {
-        margin-top: 20px;
+    margin-top: 20px;
 }
 
 img.center {
@@ -59,4 +91,13 @@ img.center {
 
 .background-gray{
   background-color: gray;
+}
+
+.row p{
+      margin-top: 20px;
+      margin-bottom: 135px;
+}
+
+.row img{
+      margin-top: 10px;
 }
