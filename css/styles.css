@@ -87,7 +87,11 @@ body {
 }
 
 .title-logo {
+    position: relative;
     margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    /*text-align: center;*/
 }
 
 img.center {
@@ -111,4 +115,38 @@ img.center {
 
 .row img{
       margin-top: 10px;
+}*/
+
+.light img{
+  width: 200px;
+  height: 200px;
+}
+
+.light spn{
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+}
+
+/**/
+/*
+.rsample{
+    position:relative;
+    width:300px;
+}
+.rsample span{
+    position:absolute;
+    bottom:5px;
+    left:0px;
+    width:300px;
+    text-align:center;
+    color:#fff;
+    line-height:250%;
+    background-color:#000;
+    filter:alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+.rsample img{
+    width:300px;
 }*/
