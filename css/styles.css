@@ -43,6 +43,10 @@ body {
     color: #F7084D;
 }
 
+.text-brightgrayishcyan{
+  color:#85afae;
+}
+
 .btn a{
   border-radius: 12px;
   border: #000000 solid 2px;
@@ -68,10 +72,6 @@ body {
   color: #4D7A35;
   font-size: 10px;
   padding: 5px 10px;
-}
-
-.text-brightgrayishcyan{
-  color:#85afae;
 }
 
 .text-thin {
@@ -118,35 +118,19 @@ img.center {
 }*/
 
 .light img{
-  width: 200px;
-  height: 200px;
+  width: 80%;
+  height:80%;
+  left: 10%;
+  position: relative;
 }
 
-.light spn{
-  position: relative;
+.light span{
   font-size: 30px;
+  display: block;
   text-align: center;
 }
 
-/**/
-/*
-.rsample{
-    position:relative;
-    width:300px;
-}
-.rsample span{
-    position:absolute;
-    bottom:5px;
-    left:0px;
-    width:300px;
-    text-align:center;
-    color:#fff;
-    line-height:250%;
-    background-color:#000;
-    filter:alpha(opacity=80);
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-}
-.rsample img{
-    width:300px;
+/*.hoge {
+  position: relative;
+  text-align: center;
 }*/
