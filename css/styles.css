@@ -28,7 +28,7 @@ body {
 
 /* ****** top image ****** */
 .image_beach{
-  height: 500px;
+  height: 700px;
   background-image: url(../img/beach.jpg);
   background-size: 100% 100%;
   background-position: center;
@@ -37,15 +37,15 @@ body {
   font-family: 'Rammetto One', cursive;
   color: white;
   text-align: center;
-  padding-top: 140px;
+  padding-top: 255px;
 }
 /* ********************* */
 
 /* ******Portfolio image text****** */
 .light img{
-  width: 80%;
-  height:80%;
-  left: 10%;
+  width: 50%;
+  height:50%;
+  left: 25%;
   position: relative;
 }
 
