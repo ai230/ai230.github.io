@@ -33,12 +33,35 @@ body {
   background-size: 100% 100%;
   background-position: center;
 }
+
 .image_text{
   font-family: 'Rammetto One', cursive;
   color: white;
   text-align: center;
   padding-top: 255px;
 }
+
+.image_light{
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/light.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.image_light p{
+  position: relative;
+  font-family: 'Rammetto One', cursive;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  top: 40%;
+  height: 60px;
+  width: 80%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* ********************* */
 
 /* ******Portfolio image text****** */
