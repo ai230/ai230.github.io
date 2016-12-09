@@ -1,9 +1,60 @@
 
 body {
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
     color: #000000;
     font-weight: 300;
 }
+/* ****** menu bar****** */
+/*.nav-pills>li.active>a,*/
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus{
+  text-decoration: none;
+  background-color:red;
+  color:white;
+  border-radius: 0px;
+}
+
+.nav-pills a{
+  color: black;
+}
+.row ul{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 0px;
+}
+
+/* ********************* */
+
+/* ****** top image ****** */
+.image_beach{
+  height: 500px;
+  background-image: url(../img/beach.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+}
+.image_text{
+  font-family: 'Rammetto One', cursive;
+  color: white;
+  text-align: center;
+  padding-top: 140px;
+}
+/* ********************* */
+
+/* ******Portfolio image text****** */
+.light img{
+  width: 80%;
+  height:80%;
+  left: 10%;
+  position: relative;
+}
+
+.light span{
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+/* ********************* */
 
 .container{
   margin-left: 10;
@@ -23,6 +74,24 @@ body {
     /*text-decoration:none;*/
     /*border-bottom:solid 1px black ;*/
 }
+
+/*font-size, font- family, margin  ****** */
+.font-style{
+  font-family: 'Chango', cursive;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
+.font-80 {
+    font-size: 80px;
+}
+
+.font-35 {
+    font-size: 35px;
+}
+
 .text-margin{
   margin-bottom: 20px;
   margin-top: 20px;
@@ -38,7 +107,6 @@ body {
   margin-top: 80px;
 }
 
-
 .text-pink {
     color: #F7084D;
 }
@@ -46,6 +114,7 @@ body {
 .text-brightgrayishcyan{
   color:#85afae;
 }
+/* ********************* */
 
 .btn a{
   border-radius: 12px;
@@ -74,18 +143,6 @@ body {
   padding: 5px 10px;
 }
 
-.text-thin {
-    font-weight: 100;
-}
-
-.font-60 {
-    font-size: 60px;
-}
-
-.font-80 {
-    font-size: 80px;
-}
-
 .title-logo {
     position: relative;
     margin-top: 20px;
@@ -108,29 +165,6 @@ img.center {
   margin-left: 12px;
 }
 
-/*.row p{
-      margin-top: 20px;
-      margin-bottom: 135px;
+.btmbg{
+  background-color: gray;
 }
-
-.row img{
-      margin-top: 10px;
-}*/
-
-.light img{
-  width: 80%;
-  height:80%;
-  left: 10%;
-  position: relative;
-}
-
-.light span{
-  font-size: 30px;
-  display: block;
-  text-align: center;
-}
-
-/*.hoge {
-  position: relative;
-  text-align: center;
-}*/
