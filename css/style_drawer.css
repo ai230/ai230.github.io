@@ -1,0 +1,146 @@
+body{
+  background-color: #F4C6C6;
+}
+
+/*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/
+#navToggle {
+    display:none;
+    position:absolute;
+    right:13px;
+    top:13px;
+    width:30px;
+    height:25px;
+    cursor:pointer;
+  }
+#navToggle div {
+  position:relative;
+}
+#navToggle span {
+    display:block;
+    position:absolute; /*For #navToggle div*/
+    width:100%;
+    border-bottom:solid 3px #999;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+  }
+#navToggle span:nth-child(1) {
+  top:0px;
+}
+#navToggle span:nth-child(2) {
+  top:11px;
+}
+#navToggle span:nth-child(3) {
+  top:22px;
+}
+
+/*Big screen navigation*/
+header{
+    width:100%;
+    z-index:2;
+    position:fixed;
+    background:rgba(255,255,255,.7);
+    display:table;
+    font-size:0px;
+    line-height:0;
+}
+header h1 nav {
+    display:table-cell;
+}
+nav {
+    text-align:right;
+    vertical-align:bottom;
+}
+header h1 a img {
+    height:40px;
+    margin:10px;
+}
+header ul {
+    font-size:13px;
+    line-height:1px;
+    margin:0px 10px 10px 0px;
+}
+header ul li {
+    margin-left:3px;
+    display:inline-block;
+}
+header ul li::after {
+  content:' |';
+}
+header ul li:last-child::after {
+  content:'';
+}
+header ul li a {
+  color:inherit;
+}
+
+/*For small screen, screen size <420px */
+@media screen and (max-width: 420px){
+
+      /*Navigation Menu*/
+      header ul{
+        margin:0px;
+        position: absolute;
+        right:0px;
+         /*outside of screen(hide)*/
+        top: -300px;
+        background:rgba(255,255,255,.7);
+        width:50%;
+        padding:0px 10px;
+        /*transition moving*/
+        -webkit-transition:.5s ease-in-out;
+        -moz-transition:.5s ease-in-out;
+        transition:.5s ease-in-out;
+        text-align:left;
+      }
+      header ul li{
+          display:block;
+          margin: 0px;
+          border-bottom:dotted 1px #fff;
+          line-height:3;
+      }
+      header ul li a{
+        display:block;
+      }
+      header ul li::after {
+        content:'';
+      }
+      header ul li:last-child {
+        border-bottom:none;
+      }
+
+      /* skiding drawer menu*/
+      /*display:none(hide) --> display:block(show)*/
+      #navToggle {
+        display:block;
+      }
+
+      /*.openNav ul move Y to 351px --> show*/
+      .openNav ul{
+          -moz-transform: translateY(351px);
+          -webkit-transform: translateY(351px);
+          transform: translateY(351px);
+      }
+
+
+      /* Click Toggle(Button) change style*/
+      .openNav #navToggle span:nth-child(1) {
+          top: 11px;
+          -webkit-transform:rotate(-45deg);
+          -moz-transform:rotate(-45deg);
+          transform:rotate(-45deg);
+      }
+      .openNav #navToggle span:nth-child(2) {
+          top: 11px;
+          -webkit-transform:rotate(45deg);
+          -moz-transform:rotate(45deg);
+          transform:rotate(45deg);
+      }
+      .openNav #navToggle span:nth-child(3) {
+          top: 11px;
+          -webkit-transform:rotate(45deg);
+          -moz-transform:rotate(45deg);
+          transform:rotate(45deg);
+      }
+}
+      　
