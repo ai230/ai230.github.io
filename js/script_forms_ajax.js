@@ -34,5 +34,6 @@ $(function(){
     });
 
     event.preventDefault();
+    alert("hi");
   });
 });
