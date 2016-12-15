@@ -1,0 +1,19 @@
+
+html,
+body,
+.container,
+#colMessage{
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
+
+textarea.form-control{
+  height: 100%;
+}
+
+#rowChat{
+  /*background-color: #4E937A;*/
+  position: relative;
+  height: 100%;
+}
