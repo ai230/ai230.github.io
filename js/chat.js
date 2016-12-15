@@ -1,13 +1,14 @@
 $(function(){
-
+  // define the server url
   var url = "http://api.ideiadoluiz.com.br/chat/code.php";
+  // initialize the counter
   var varCounter = 0;
+  // asks the user for his/her name
   var varName = prompt("What is your name?");
 
   //listner
   $("#btnSend").click(function(){
-    // alert("hi");
-    //if the messaage is e
+    // if the message is empty, we leave the function.
     if($("#textMessage").val() == ""){
       return;
     }
@@ -19,17 +20,15 @@ $(function(){
       message: $("#textMessage").val()
     });
 
-    //if fail
+    // if fail, we will alert the user
     request.fail(function(err){
       console.log("error");
     });
 
-    //if
+    // we clean the message afterwards
     request.always(function(){
       $("#textMessage").val("");
     });
-
-
 
   });
 
@@ -50,14 +49,17 @@ $(function(){
       varCounter=data.lastCounter;
       var i = 0;
       while(i<data.messages.length){
+        // build the message with the array
           var message = data.messages[i].user + ":" +
                         data.messages[i].value + "\n";
-          //"\n" new line
+          // append the message to the chat
           $("#textChat").append(message);
+          // increment the variable 'i'
           i=i+1;
       }
+      // put the scroll at the bottom
       $("#textChat").scrollTop($("#textChat")[0].scrollHeight);
 
     });
-  },1000);
+  },1000);// call it every second
 });
