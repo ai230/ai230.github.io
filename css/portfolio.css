@@ -29,8 +29,8 @@
   position: absolute;
   width: 500px;
   height: 280px;
-  top: 15%;
-  left: 50%;
+  top: 94px;
+  left: 45%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
@@ -49,7 +49,6 @@
 
 /*---------------------*/
 #pc_img img{
-  width: 60%;
   position: relative;
   top: -70px;
   margin-bottom: 10%;
@@ -96,14 +95,14 @@
 #rectangle6{
   position: absolute;
   z-index:2;
-  top: 33%;
-  left: 33.5%;
+  top: 35%;
+  left: 32%;
 }
 #rectangle8{
   position: absolute;
   z-index:2;
-  top: 33%;
-  left: 78%;
+  top: 35%;
+  left: 76%;
 }
 /*---------------------------*/
 #Portfolio img{
@@ -276,29 +275,31 @@ header ul li a:hover {
       }
 
       /*slideshow make img smaller and position*/
-      #slideshow{
+      /*#slideshow{
         top: 25%;
         left: 63%;
       }
       #slideshow img{
         width: 60%;
-      }
+      }*/
       /*-----------------------*/
 }
 @media screen and (max-width: 420px){
     #slideshow{
-      top: 45%;
-      left: 106%;
+      top: 42%;
+      width: 600px;
+      left: 110%;
     }
     #slideshow img{
       width: 25%;
     }
-    /*#pageTop {
-      right: 266px;
+    #pc_img img{
+      width: 230px;
+      position: relative;
+      top: -70px;
+      margin-bottom: 10%;
     }
-    #pageTop a {
-      font-size: 60px;
-    }*/
+
 }
 /*footer*/
 footer{
