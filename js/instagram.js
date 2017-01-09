@@ -10,12 +10,12 @@ function getMyinfo() {
             dataType: "JSONP",
             success: function(responce) {
                 console.log(responce);
-                document.getElementById("userName").innerHTML = responce.data.username;
                 document.getElementById("fullName").innerHTML = responce.data.full_name;
             },
         });
     } else {
         console.log("no token")
+        document.getElementById("fullName").innerHTML = "please login";
     }
 
 
