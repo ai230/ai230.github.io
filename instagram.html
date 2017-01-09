@@ -1,10 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/instagram.js"></script>
 </head>
 <body>
 <a href="https://api.instagram.com/oauth/authorize/?client_id=610596b23df34c1399232b7675e8479d&redirect_uri=https://ai230.github.io/instagram.html&response_type=token">api</a>
-<button id="apiData"class="btn btn-default">click</button>
+<button onclick="getMyinfo()">click</button>
+<div id="userName"></div>
+<div id="fullName"></div>
 </body>
 </html>
