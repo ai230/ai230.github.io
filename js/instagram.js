@@ -9,7 +9,7 @@ function getMyinfo1() {
             dataType: "JSONP",
             success: function(responce1) {
                 console.log(responce1);
-                document.getElementById("fullName").innerHTML = responce.data.full_name;
+                document.getElementById("fullName").innerHTML = responce1.data.full_name;
                 document.getElementById("id").innerHTML = responce.data.id;
                 document.getElementById("userName").innerHTML = responce.username;
                 document.getElementById("followedBy").innerHTML = responce.data.counts.followed_by;
@@ -32,7 +32,7 @@ function getMyinfo2() {
             success: function(responce2) {
                 console.log("2");
                 console.log(responce2);
-                document.getElementById("image").innerHTML = responce.data.images.standard_resolution;
+                document.getElementById("image").innerHTML = responce2.data.images.standard_resolution;
                 // document.getElementById("id").innerHTML = responce.data.id;
                 // document.getElementById("userName").innerHTML = responce.username;
                 // document.getElementById("followedBy").innerHTML = responce.data.counts.followed_by;
