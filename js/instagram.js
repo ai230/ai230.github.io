@@ -35,7 +35,7 @@ function getMyinfo2() {
                 var imgUrl = responce.data[0].images.standard_resolution.url;
                 document.getElementById("image").innerHTML = imgUrl;
                 document.getElementById("text").innerHTML = responce.data[0].caption.text;
-                document.getElementById('image').setAttribute("src", imgUrl);
+                document.getElementById("showImage").setAttribute("src", imgUrl);
             },
         });
     } else {
