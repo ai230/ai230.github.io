@@ -13,8 +13,8 @@ function getMyinfo() {
                 document.getElementById("fullName").innerHTML = responce.data.full_name;
                 document.getElementById("id").innerHTML = responce.data.id;
                 document.getElementById("userName").innerHTML = responce.username;
-                document.getElementById("followedBy").innerHTML = responce.counts.followed_by;
-                
+                document.getElementById("followedBy").innerHTML = responce.data.counts.followed_by;
+                document.getElementById("profilePic").innerHTML = responce.data.profile_picture;
             },
         });
     } else {
