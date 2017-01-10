@@ -32,7 +32,7 @@ function getMyinfo2() {
             success: function(responce) {
                 console.log("2");
                 console.log(responce);
-                document.getElementById("image").innerHTML = responce.data.images.standard_resolution;
+                document.getElementById("image").innerHTML = responce.data;
                 // document.getElementById("id").innerHTML = responce.data.id;
                 // document.getElementById("userName").innerHTML = responce.username;
                 // document.getElementById("followedBy").innerHTML = responce.data.counts.followed_by;
