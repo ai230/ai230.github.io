@@ -32,11 +32,10 @@ function getMyinfo2() {
             success: function(responce) {
                 console.log("2");
                 console.log(responce);
-                document.getElementById("image").innerHTML = responce.data[0].images.standard_resolution.url;
+                var imgUrl = responce.data[0].images.standard_resolution.url;
+                document.getElementById("image").innerHTML = imgUrl;
                 document.getElementById("text").innerHTML = responce.data[0].caption.text;
-                // document.getElementById("userName").innerHTML = responce.username;
-                // document.getElementById("followedBy").innerHTML = responce.data.counts.followed_by;
-                // document.getElementById("profilePic").innerHTML = responce.data.profile_picture;
+                document.getElementById('image').setAttribute("src", imgUrl);
             },
         });
     } else {
