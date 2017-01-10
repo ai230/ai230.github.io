@@ -50,7 +50,7 @@ function getMyinfo3() {
         $.ajax({
             url: "https://api.instagram.com/v1/users/self/follows?access_token=" + token.substr(14),
             method: "get",
-            // dataType: "JSONP",
+            dataType: "JSONP",
             success: function(responce) {
                 console.log("3");
                 console.log(responce);
