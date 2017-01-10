@@ -43,7 +43,7 @@ function getMyinfo2() {
         document.getElementById("image").innerHTML = "please login";
     }
 }
-//GET/users/self/media/recent
+//GET/users/self/follows
 function getMyinfo3() {
     if (token.substr(0, 14) == "#access_token=") {
         console.log(token)
