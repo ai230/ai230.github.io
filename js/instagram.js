@@ -9,8 +9,17 @@ $(function() {
             dataType: "JSONP",
             success: function(responce) {
                 console.log(responce);
-                document.getElementById("myName").innerHTML = responce.data.full_name;
-                $("#myprofilePic").append("<img src='" + responce.data["profile_picture"] + "'><br />");
+                var myName = responce.data["full_name"];
+                var myPic = responce.data["profile_picture"];
+                var myFollows = responce.data.counts["follows"];
+                var myFollowedBy = responce.data.counts["followed_by"];
+
+                $("#mypic").append("<img src='" + myPic + "'>");
+                $("#myname").append("<p>" + myName + "</p>");
+                $("#myfollows").append("<p>" + myFollows + " followers</p>");
+                $("#myfollowedby").append("<p>" + myFollowedBy + " following</p>");
+
+
             },
         });
         //GET/users/self/follows
@@ -22,8 +31,7 @@ $(function() {
                 console.log(responce);
                 for (var i = 0; i < responce.data.length; i++) {
                     console.log("ok")
-                    $("#followsImfo").append(responce.data[i]["full_name"] + "<br />");
-                    $("#followsImfo").append("<img src='" + responce.data[i]["profile_picture"] + "'><br />");
+                    $("#followsInfo").append("<div class='col-sm-4 hvr-float'><li><p>" + responce.data[i]["full_name"] + "</p>" + "<img src='" + responce.data[i]["profile_picture"] + "'></li></div>");
                 }
             },
         });

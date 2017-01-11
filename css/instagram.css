@@ -1,0 +1,51 @@
+body{
+  background: #dcd8d8;
+  font-family: monospace;
+}
+.container {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+#title{
+  font-size: 20px;
+  margin-top: 30px;
+}
+#loginArea {
+  display: block;
+  float: right;
+}
+#logoutArea {
+  display: block;
+  float: right;
+}
+.hvr-fade {
+  background-color: #CCDFD9;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #90BAAD;
+  color: white;
+}
+.vcenter{
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+.vcenter img{
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+#followsInfo {
+  display: inline-block;
+}
+#followsInfo img{
+  border-radius: 6px;
+}
+#followsInfo p{
+  margin-bottom: 0px;
+}
+li{
+  list-style-type: none;
+}
