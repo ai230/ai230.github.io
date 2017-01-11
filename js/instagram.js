@@ -1,5 +1,5 @@
-var token = window.location.hash;
-function getMyinfo() {
+$(function() {
+    var token = window.location.hash;
     if (token.substr(0, 14) == "#access_token=") {
         console.log(token)
         //users/self
@@ -7,11 +7,10 @@ function getMyinfo() {
             url: "https://api.instagram.com/v1/users/self/?access_token=" + token.substr(14),
             method: "get",
             dataType: "JSONP",
-            success: function(responce1) {
-                console.log(responce1);
-                document.getElementById("fullName").innerHTML = responce1.data.full_name;
-                document.getElementById("profilePic").innerHTML = responce1.data.profile_picture;
-                // document.getElementById("profilePic").setAttribute("src", imgUrl);
+            success: function(responce) {
+                console.log(responce);
+                document.getElementById("myName").innerHTML = responce.data.full_name;
+                $("#myprofilePic").append("<img src='" + responce.data["profile_picture"] + "'><br />");
             },
         });
         //GET/users/self/follows
@@ -19,14 +18,17 @@ function getMyinfo() {
             url: "https://api.instagram.com/v1/users/self/follows?access_token=" + token.substr(14),
             method: "get",
             dataType: "JSONP",
-            success: function(responce2) {
-                console.log(responce2);
-                document.getElementById("followsfullName").innerHTML = responce2.data[0].full_name;
-                document.getElementById("followsprofilePic").innerHTML = responce2.data[0].profile_picture;
+            success: function(responce) {
+                console.log(responce);
+                for (var i = 0; i < responce.data.length; i++) {
+                    console.log("ok")
+                    $("#followsImfo").append(responce.data[i]["full_name"] + "<br />");
+                    $("#followsImfo").append("<img src='" + responce.data[i]["profile_picture"] + "'><br />");
+                }
             },
         });
     } else {
         console.log("no token")
         document.getElementById("fullName").innerHTML = "please login";
     }
-}
+});

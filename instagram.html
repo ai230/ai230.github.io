@@ -8,13 +8,10 @@
   <script type="text/javascript" src="js/instagram.js"></script>
 </head>
 <body>
-<a href="https://api.instagram.com/oauth/authorize/?client_id=610596b23df34c1399232b7675e8479d&redirect_uri=https://ai230.github.io/instagram.html&response_type=token&scope=likes+follower_list">Login</a>
-<a href="https://ai230.github.io/instagram.html">Logout</a>
-<button onclick="getMyinfo()">Information</button>
-<div id="fullName"></div>
-<div id="profilePic"></div>
-<!-- <img id="profilePic" src="" alt="img"> -->
-<div id="followsfullName"></div>
-<div id="followsprofilePic"></div>
+<a id="loginArea"  href="https://api.instagram.com/oauth/authorize/?client_id=610596b23df34c1399232b7675e8479d&redirect_uri=https://ai230.github.io/instagram.html&response_type=token&scope=likes+follower_list">Login</a>
+<a id="logoutArea" href="https://ai230.github.io/instagram.html">Logout</a>
+<div id="myName"></div>
+<div id="myprofilePic"></div>
+<div id="followsImfo"></div>
 </body>
 </html>
