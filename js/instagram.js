@@ -29,6 +29,6 @@ $(function() {
         });
     } else {
         console.log("no token")
-        document.getElementById("fullName").innerHTML = "please login";
+        document.getElementById("myName").innerHTML = "please login";
     }
 });
