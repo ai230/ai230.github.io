@@ -2,10 +2,10 @@ body{
   background: #dcd8d8;
   font-family: monospace;
 }
-.container {
+/*.container {
   padding-right: 100px;
   padding-left: 100px;
-}
+}*/
 #title{
   font-size: 20px;
   margin-top: 30px;
@@ -45,15 +45,23 @@ body{
   margin-bottom: 30px;
 }
 #followsInfo {
-  display: inline-block;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 #followsInfo img{
-  border-radius: 6px;
+  /*border-radius: 6px;*/
+  border-radius: 50%;
 }
 #followsInfo p{
   margin-bottom: 0px;
 }
-#followsInfo li{
+#followsInfo li,#followsInfo1 li{
   list-style-type: none;
+  margin: 10px;
+}
+#followsInfo1 img{
+  border-radius: 6px;
+  width: 150px;
+}
+.hvr-bubble-float-bottom:before {
+  border-color: #90BAAD transparent transparent transparent;
 }
