@@ -13,10 +13,17 @@ body{
 #loginArea {
   display: block;
   float: right;
+  margin-left: 5px;
 }
 #logoutArea {
   display: block;
   float: right;
+  margin-left: 5px;
+}
+#notaken{
+  display: block;
+  float: right;
+  margin-left: 10px;
 }
 .hvr-fade {
   background-color: #CCDFD9;
@@ -39,6 +46,7 @@ body{
 }
 #followsInfo {
   display: inline-block;
+  margin: 10px;
 }
 #followsInfo img{
   border-radius: 6px;
@@ -46,6 +54,6 @@ body{
 #followsInfo p{
   margin-bottom: 0px;
 }
-li{
+#followsInfo li{
   list-style-type: none;
 }

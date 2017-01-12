@@ -24,19 +24,21 @@ $(function() {
         });
         //GET/users/self/follows
         $.ajax({
-            url: "https://api.instagram.com/v1/users/self/follows?access_token=" + token.substr(14),
+            url: "https://api.instagram.com/v1/users/self/followed-by?access_token=" + token.substr(14),
             method: "get",
             dataType: "JSONP",
             success: function(responce) {
                 console.log(responce);
                 for (var i = 0; i < responce.data.length; i++) {
                     console.log("ok")
-                    $("#followsInfo").append("<div class='col-sm-4 hvr-float'><li><p>" + responce.data[i]["full_name"] + "</p>" + "<img src='" + responce.data[i]["profile_picture"] + "'></li></div>");
+                    var followedName = responce.data[i]["full_name"];
+                    var followedUserName = responce.data[i]["username"];
+                    var followedPic = responce.data[i]["profile_picture"];
+                    $("#followsInfo").append("<div class='hvr-float' style='margin: 10px;'><li><p>" + followedName + "</p><p>" + followedUserName + "</p><img src='" + followedPic + "'></li></div>");
                 }
             },
         });
     } else {
-        console.log("no token")
-        document.getElementById("myName").innerHTML = "please login";
+        document.getElementById("notaken").innerHTML = "please login";
     }
 });

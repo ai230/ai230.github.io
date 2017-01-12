@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/instagram.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/hover-min.css">
-  <link rel="stylesheet" href="css/instagram.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/instagram.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/instagram.css">
 </head>
+
 <body>
-  <div class="container">
-  <div class="row">
-    <div class="col-md-12" id="title">
-      <span><i class="fa fa-instagram" aria-hidden="true"></i>instagram</span>
+    <div class="container">
+        <div class="row" id="title">
+            <div class="col-md-12">
+                <span><i class="fa fa-instagram hvr-icon-grow" aria-hidden="true"></i>instagram</span>
+            </div>
+            <div class="col-md-12">
+                <p id="notaken"></p>
+                <a id="logoutArea" href="https://ai230.github.io/instagram.html"><button class="btn btn-default hvr-fade">Logout</button></a>
+                <a id="loginArea" href="https://api.instagram.com/oauth/authorize/?client_id=610596b23df34c1399232b7675e8479d&redirect_uri=https://ai230.github.io/instagram.html&response_type=token&scope=likes+follower_list"><button class="btn btn-default hvr-fade">Login</button></a>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-md-3 vcenter hvr-float">
+                <div id="mypic"></div>
+            </div>
+            <div class="col-sm-5 col-md-3 vcenter">
+                <div id="myname"></div>
+                <div id="myfollows"></div>
+                <div id="myfollowedby"></div>
+            </div>
+        </div>
+        <!--class="row"-->
+        <div class="row">
+            <ul id="followsInfo">
+            </ul>
+        </div>
+        <!--class="row"-->
     </div>
-    <div class="col-md-12">
-      <a id="loginArea"  href="https://api.instagram.com/oauth/authorize/?client_id=610596b23df34c1399232b7675e8479d&redirect_uri=https://ai230.github.io/instagram.html&response_type=token&scope=likes+follower_list"><button class="btn btn-default hvr-fade">Login</button></a>
-      <a id="logoutArea" href="https://ai230.github.io/instagram.html"><button class="btn btn-default hvr-fade">Logout</button></a>
-    </div><!--col-md-12-->
-  </div><!--class="row"-->
-  <div class="row">
-      <div class="col-sm-5 col-md-3 vcenter hvr-float">
-        <div id="mypic"></div>
-      </div>
-      <div class="col-sm-5 col-md-3 vcenter">
-        <div id="myname"></div>
-        <div id="myfollows"></div>
-        <div id="myfollowedby"></div>
-      </div>
-  </div><!--class="row"-->
-  <div class="row">
-    <ul id="followsInfo">
-    </ul>
-  </div><!--class="row"-->
-</div><!--class="container"-->
+    <!--class="container"-->
 </body>
+
 </html>
