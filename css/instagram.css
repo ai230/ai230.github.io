@@ -11,12 +11,7 @@ body{
   float: right;
   margin-left: 5px;
 }
-#logoutArea {
-  display: block;
-  float: right;
-  margin-left: 5px;
-}
-#notaken{
+#noTaken{
   display: block;
   float: right;
   margin-left: 10px;

@@ -1,15 +1,22 @@
 var token;
 $(function() {
+    $('#logOut').hide();
+    $('#logIn').click() {
+      $(this).hide();
+      $('#logOut').show();
+    }
+    $('#logOut').click() {
+      $(this).hide();
+      $('#logIn').show();
+    }
     token = window.location.hash;
     if (token.substr(0, 14) == "#access_token=") {
-        console.log(token)
-            //users/self
+        //users/self
         $.ajax({
             url: "https://api.instagram.com/v1/users/self/?access_token=" + token.substr(14),
             method: "get",
             dataType: "JSONP",
             success: function(responce) {
-                console.log(responce);
                 var myName = responce.data["full_name"];
                 var myPic = responce.data["profile_picture"];
                 var myFollows = responce.data.counts["follows"];
@@ -26,9 +33,7 @@ $(function() {
             method: "get",
             dataType: "JSONP",
             success: function(responce) {
-                console.log(responce);
                 for (var i = 0; i < responce.data.length; i++) {
-                    console.log("ok")
                     var followedName = responce.data[i]["full_name"];
                     var followedUserName = responce.data[i]["username"];
                     var followedPic = responce.data[i]["profile_picture"];
@@ -38,13 +43,11 @@ $(function() {
             },
         });
     } else {
-        document.getElementById("notaken").innerHTML = "please login";
+        document.getElementById("noTaken").innerHTML = "please login";
     }
 });
-
-function getImage(followedId) {
-    $('#followsInfo1').empty()
-    console.log(followedId)
+function getImage(followedId){
+    $('#followsInfoPics').empty()
         //GET/users/self/media/recent
     $.ajax({
         url: "https://api.instagram.com/v1/users/" + followedId + "/media/recent/?access_token=" + token.substr(14),
@@ -52,14 +55,13 @@ function getImage(followedId) {
         dataType: "JSONP",
         success: function(responce) {
             if (responce.data == undefined || responce.data.length == 0) {
-                $("#followsInfo1").append("No data found");
+                $("#followsInfoPics").append("No data found");
             } else {
                 for (var i = 0; i < responce.data.length; i++) {
-                    console.log("ok")
                     var followedInfoimage = responce.data[i].images.low_resolution["url"];
-                    $("#followsInfo1").append("<div style='display: inline-block;'><li><img src='" + followedInfoimage + "'></li></div>");
+                    $("#followsInfoPics").append("<div style='display: inline-block;'><li><img src='" + followedInfoimage + "'></li></div>");
                 }
             }
         },
     });
-};
+});
