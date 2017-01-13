@@ -45,11 +45,11 @@ body{
 #followsInfo p{
   margin-bottom: 0px;
 }
-#followsInfo li,#followsInfo1 li{
+#followsInfo li,#followsInfoPics li{
   list-style-type: none;
   margin: 10px;
 }
-#followsInfo1 img{
+#followsInfoPics img{
   border-radius: 6px;
   width: 150px;
 }
