@@ -1,14 +1,14 @@
 var token;
 $(function() {
     $('#logOut').hide();
-    $('#logIn').click() {
+    $('#logIn').click(function() {
       $(this).hide();
       $('#logOut').show();
-    }
-    $('#logOut').click() {
+    });
+    $('#logOut').click(function() {
       $(this).hide();
       $('#logIn').show();
-    }
+    });
     token = window.location.hash;
     if (token.substr(0, 14) == "#access_token=") {
         //users/self
@@ -64,4 +64,4 @@ function getImage(followedId){
             }
         },
     });
-});
+}
