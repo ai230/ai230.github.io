@@ -1,3 +1,15 @@
+[class^='imghvr-reveal-']:before, [class*=' imghvr-reveal-']:before {
+  background-color: #7DB4B5;
+}
+[class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
+    background-color: #7DB4B5;
+}
+[class^='imghvr-'], [class*=' imghvr-'] {
+ background-color: white;
+}
+.ciccc img{
+  width:300px;
+}
 .container{
   margin-left: 0%;
   margin-right: 0%;
