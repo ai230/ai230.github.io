@@ -7,8 +7,11 @@
 [class^='imghvr-'], [class*=' imghvr-'] {
  background-color: white;
 }
-.ciccc img{
-  width:300px;
+.imghvr-reveal-down{
+  border-radius: 6px;
+}
+.portfolioArea img{
+  width:230px;
 }
 .container{
   margin-left: 0%;
@@ -64,63 +67,12 @@
    background-position: center;
    background-repeat: no-repeat;
 }
-/*#pc_img img{
-  position: relative;
-  top: -70px;
-  margin-bottom: 10%;
-}*/
-.rectangle img{
-  margin: 0.5%;
-  max-width: 280px;
-  width: 22%;
-  position: relative;
-}
 .center{
   text-align: center;
 }
 .left{
   text-align: left;
 }
-/*Organizing the position of icons and text*/
-.rectangle a{
-    color: #696464;
-    font-size: 2vW;
-}
-.rectangle a:hover{
-  color: #EF788C;
-}
-
-#rectangle2{
-  position: absolute;
-  z-index:2;
-  top: 38%;
-  left: 32%;
-}
-#rectangle3{
-  position: absolute;
-  z-index:2;
-  top: 38%;
-  left: 54.5%;
-}
-#rectangle5{
-  position: absolute;
-  z-index:2;
-  top: 33%;
-  left: 12%;
-}
-#rectangle6{
-  position: absolute;
-  z-index:2;
-  top: 35%;
-  left: 32%;
-}
-#rectangle8{
-  position: absolute;
-  z-index:2;
-  top: 35%;
-  left: 76%;
-}
-/*---------------------------*/
 #Portfolio img{
   width: 60%;
   margin: 3%;
