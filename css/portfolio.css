@@ -1,17 +1,21 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 [class^='imghvr-reveal-']:before, [class*=' imghvr-reveal-']:before {
   background-color: #7DB4B5;
 }
 [class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
-    background-color: #7DB4B5;
+  background-color: #7DB4B5;
 }
 [class^='imghvr-'], [class*=' imghvr-'] {
  background-color: white;
 }
 .imghvr-reveal-down{
-  border-radius: 6px;
+  /*border-radius: 6px;*/
+  /*margin: 10px;*/
 }
 .portfolioArea img{
-  width:230px;
+  width: 300px;
 }
 .container{
   margin-left: 0%;
@@ -25,7 +29,6 @@
   position: relative;
   color: white;
   text-align: center;
-  font-family: 'Chela One', cursive;
 }
 .intro span{
   color: #EF788C;
@@ -79,14 +82,12 @@
 }
 #me h2,
 #contactform h2{
-  font-family: 'Chela One', cursive;
   color: #696464;
 }
 #me p,
 #me h4,
 #me ul li,
 #contactform label{
-  font-family: 'Acme', sans-serif;
   color: #696464;
   font-size: 20px;
 }
@@ -165,7 +166,6 @@ header ul li a {
   color:inherit;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
-  font-family: 'Pathway Gothic One', sans-serif;
 }
 header ul li a:hover {
     background: #EF788C;
