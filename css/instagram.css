@@ -33,7 +33,6 @@ body{
   vertical-align: middle;
   float: none;
   border-radius: 50%;
-  margin-bottom: 30px;
 }
 #followsInfo {
   margin-bottom: 20px;
@@ -68,10 +67,10 @@ body{
   #followsInfo img{
     width: 80px;
   }
-  #mypic{
-    width: 100px;
+  .vcenter img{
+    width: 120px;
   }
-  .vcenter{
-    padding-left: 60px;
+  p{
+    font-size: 12px;
   }
 }
