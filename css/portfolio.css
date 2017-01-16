@@ -1,19 +1,18 @@
+body,a{
+  color: #696464;
+}
 body,
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Open Sans', sans-serif;
 }
 [class^='imghvr-reveal-']:before, [class*=' imghvr-reveal-']:before {
-  background-color: #7DB4B5;
+  background-color: #90BAAD;
 }
 [class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
-  background-color: #7DB4B5;
+  background-color: #90BAAD;
 }
 [class^='imghvr-'], [class*=' imghvr-'] {
  background-color: white;
-}
-.imghvr-reveal-down{
-  /*border-radius: 6px;*/
-  /*margin: 10px;*/
 }
 .portfolioArea img{
   width: 300px;
@@ -44,17 +43,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #slideshow {
   /*z-index: 2;*/
   position: relative;
-  /*width: 500px;
-  height: 280px;*/
   top: 58px;
-  /*left: 45%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);*/
 }
-
 #slideshow > div {
     position: absolute;
     top: 10px;
@@ -62,8 +52,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     right: 10px;
     bottom: 10px;
 }
-
-
 /*---------------------*/
 #pc_img{
    height: 700px;
@@ -74,22 +62,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .center{
   text-align: center;
 }
-.left{
+.alignLeft{
   text-align: left;
-}
-#Portfolio img{
-  width: 60%;
-  margin: 3%;
-}
-#me h2,
-#contactform h2{
-  color: #696464;
 }
 #me p,
 #me h4,
 #me ul li,
 #contactform label{
-  color: #696464;
+  /*color: #696464;*/
   font-size: 20px;
 }
 /*Sliding drawer menu icon, For Screen size>420px display:none;--> hide*/
@@ -128,13 +108,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 header{
     width:100%;
     z-index:2;
-    /*position:fixed;*/
-    /*background:rgba(255,255,255,.7);*/
     background: #dcd8d8;
     display:table;
     font-size:0px;
     line-height:0;
-    color: #696464;
 }
 header h1 nav {
     display:table-cell;
@@ -148,7 +125,7 @@ header a img {
     margin:10px;
 }
 header ul {
-    font-size:20px;
+    font-size:15px;
     line-height:1px;
     margin:0px 10px 10px 0px;
     text-align: center;
@@ -242,16 +219,6 @@ header ul li a:hover {
           -moz-transform:rotate(45deg);
           transform:rotate(45deg);
       }
-
-      /*slideshow make img smaller and position*/
-      /*#slideshow{
-        top: 25%;
-        left: 63%;
-      }
-      #slideshow img{
-        width: 60%;
-      }*/
-      /*-----------------------*/
 }
 @media screen and (max-width: 420px){
     #slideshow{
@@ -305,8 +272,6 @@ footer ul li a {
   position: fixed;
   bottom: 1%;
   right: 0%;
-  /*bottom: 20px;
-  right: 20px;*/
 }
 #pageTop a {
   z-index: 10;
@@ -316,4 +281,25 @@ footer ul li a {
 #pageTop a:hover {
   /*text-decoration: none;*/
   opacity: 0.7;
+}
+/*Design.html*/
+header img{
+  height: 40px;
+  margin: 10px;
+}
+.hvr-fade {
+    background-color: #CCDFD9;
+    float: left;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #90BAAD;
+    color: white;
+}
+#Design li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 50px;
+}
+#Design li img{
+  width: 200px;
 }
