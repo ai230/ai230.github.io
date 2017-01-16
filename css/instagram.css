@@ -40,18 +40,38 @@ body{
 }
 #followsInfo img{
   border-radius: 50%;
+  width: 100px;
 }
 #followsInfo p{
   margin-bottom: 0px;
 }
-#followsInfo li,#followsInfoPics li{
+#followsInfo li,#followsInfoPics2 li{
   list-style-type: none;
   margin: 10px;
 }
-#followsInfoPics img{
+#followsInfoPics1 img{
+  border-radius: 50%;
+  width: 50px;
+  margin: 10px;
+}
+#followsInfoPics1 span{
+  font-size: 16px;
+}
+#followsInfoPics2 img{
   border-radius: 6px;
   width: 150px;
 }
 .hvr-bubble-float-bottom:before {
   border-color: #90BAAD transparent transparent transparent;
+}
+@media (max-width: 480px) {
+  #followsInfo img{
+    width: 80px;
+  }
+  #mypic{
+    width: 100px;
+  }
+  .vcenter{
+    padding-left: 60px;
+  }
 }

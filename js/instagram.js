@@ -9,25 +9,6 @@ $(function() {
         showLogin();
     }
 });
-function getImage(followedId){
-    $('#followsInfoPics').empty()
-    //GET/users/self/media/recent
-    $.ajax({
-        url: "https://api.instagram.com/v1/users/" + followedId + "/media/recent/?access_token=" + token.substr(14),
-        method: "get",
-        dataType: "JSONP",
-        success: function(responce) {
-            if (responce.data == undefined || responce.data.length == 0) {
-                $("#followsInfoPics").append("No data found");
-            } else {
-                for (var i = 0; i < responce.data.length; i++) {
-                    var followedInfoimage = responce.data[i].images.low_resolution["url"];
-                    $("#followsInfoPics").append("<div style='display: inline-block;'><li><img src='" + followedInfoimage + "'></li></div>");
-                }
-            }
-        },
-    });
-}
 function showLogin(){
   $('#logIn').show();
   $('#logOut').hide();
@@ -49,8 +30,8 @@ function getMyinfo(){
           var myFollowedBy = responce.data.counts["followed_by"];
           $("#mypic").append("<img src='" + myPic + "'>");
           $("#myname").append("<p>" + myName + "</p>");
-          $("#myfollows").append("<p>" + myFollows + " followers</p>");
-          $("#myfollowedby").append("<p>" + myFollowedBy + " following</p>");
+          $("#myfollows").append("<p>" + myFollows + " following</p>");
+          $("#myfollowedby").append("<p>" + myFollowedBy + " followers</p>");
       },
   });
   //GET/users/self/follows
@@ -59,6 +40,7 @@ function getMyinfo(){
       method: "get",
       dataType: "JSONP",
       success: function(responce) {
+          $("#followsInfo").append("<h3>Followed By</h3>");
           for (var i = 0; i < responce.data.length; i++) {
               var followedName = responce.data[i]["full_name"];
               var followedUserName = responce.data[i]["username"];
@@ -68,4 +50,27 @@ function getMyinfo(){
           }
       },
   });
+}
+function getImage(followedId){
+    $('#followsInfoPics1').empty();
+    $('#followsInfoPics2').empty();
+    //GET/users/self/media/recent
+    $.ajax({
+        url: "https://api.instagram.com/v1/users/" + followedId + "/media/recent/?access_token=" + token.substr(14),
+        method: "get",
+        dataType: "JSONP",
+        success: function(responce) {
+            if (responce.data == undefined || responce.data.length == 0) {
+                $("#followsInfoPics2").append("No data found");
+            } else {
+                var followedInfoName = responce.data[0].caption.from["full_name"];
+                var followedInfoPic = responce.data[0].caption.from["profile_picture"];
+                $("#followsInfoPics1").append("<img src='" + followedInfoPic + "'><span>" + followedInfoName + "'s Recent Pictures</span>");
+                for (var i = 0; i < responce.data.length; i++) {
+                    var followedInfoimage = responce.data[i].images.low_resolution["url"];
+                    $("#followsInfoPics2").append("<div style='display: inline-block;'><li><img src='" + followedInfoimage + "'></li></div>");
+                }
+            }
+        },
+    });
 }
