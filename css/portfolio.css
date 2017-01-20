@@ -286,6 +286,7 @@ footer ul li a {
 header img{
   height: 40px;
   margin: 10px;
+  float: left;
 }
 .hvr-fade {
     background-color: #CCDFD9;
