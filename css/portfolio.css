@@ -282,25 +282,3 @@ footer ul li a {
   /*text-decoration: none;*/
   opacity: 0.7;
 }
-/*Design.html*/
-header img{
-  height: 40px;
-  margin: 10px;
-  float: left;
-}
-.hvr-fade {
-    background-color: #CCDFD9;
-    float: left;
-}
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-    background-color: #90BAAD;
-    color: white;
-}
-#Design li{
-  list-style-type: none;
-  display: inline-block;
-  margin: 50px;
-}
-#Design li img{
-  width: 200px;
-}
