@@ -17,23 +17,3 @@ header img{
 #Design li img{
   width: 200px;
 }
-/*for jquery.inview.js*/
-.list{
-	margin: 50px 50px 50px 50px;
-	list-style-type: none;
-	overflow: hidden;
-}
-.list li{
-	margin: 50px 20px 50px 20px;
-	transition: .8s;
-}
-.list-mv07{
-	opacity: 0;
-	transform: translate(0,60px);
-	-webkit-transform: translate(0,60px);
-}
-.mv07{
-	opacity: 1.0;
-	transform: translate(0,0);
-	-webkit-transform: translate(0,0);
-}
