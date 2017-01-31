@@ -12,13 +12,17 @@
     <link href="css/hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/imagehover.css">
     <link rel="stylesheet" href="css/inview.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/portfolio.css">
 
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+    <script>
+        AOS.init();
+      </script>
 </head>
 
 <body>
@@ -79,11 +83,14 @@
                 </div>
             </div>
         </div>
+        <div>
         <div class="row" id="me">
-            <div class="col-md-12" id="Aboutme" style="background-color:#dcd8d8; padding: 2%;">
+
+            <div  data-aos="fade-up" class="col-md-12" id="Aboutme" style="background-color:#dcd8d8; padding: 2%;">
                 <h2>ABOUT ME</h2>
                 <p>I'm a student at CICCC in Vancouver, Canada.<br />I study "Web and Mobile Application Development".<br />I used to work as Business Analyst for 5 years in Japan.<br />Now, I work as a Nail Technician in Vancouver.</p>
             </div>
+        </div>
         </div>
         <div class="row" id="portfolio">
             <div class="col-md-12">
