@@ -14,15 +14,6 @@
     <link rel="stylesheet" href="css/inview.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/portfolio.css">
-
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script type="text/javascript" src="js/portfolio.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-        AOS.init();
-      </script>
 </head>
 
 <body>
@@ -78,21 +69,19 @@
                         <img src="img/portfolioimages/MockUp_slide.jpg" alt="" />
                     </div>
                 </div>
-                <div id="pc_img" class="">
-                    <!-- <img src="img/pc.png" alt="R"> -->
+                <div id="pc_img">
                 </div>
             </div>
         </div>
         <div>
-        <div class="row" id="me">
-
-            <div  data-aos="fade-up" class="col-md-12" id="Aboutme" style="background-color:#dcd8d8; padding: 2%;">
-                <h2>ABOUT ME</h2>
-                <p>I'm a student at CICCC in Vancouver, Canada.<br />I study "Web and Mobile Application Development".<br />I used to work as Business Analyst for 5 years in Japan.<br />Now, I work as a Nail Technician in Vancouver.</p>
+            <div class="row" id="me" data-aos="fade-up">
+                <div class="col-md-12" id="Aboutme" style="background-color:#dcd8d8; padding: 2%;">
+                    <h2>ABOUT ME</h2>
+                    <p>I'm a student at CICCC in Vancouver, Canada.<br />I study "Web and Mobile Application Development".<br />I used to work as Business Analyst for 5 years in Japan.<br />Now, I work as a Nail Technician in Vancouver.</p>
+                </div>
             </div>
         </div>
-        </div>
-        <div class="row" id="portfolio">
+        <div class="row" id="portfolio" data-aos="fade-up">
             <div class="col-md-12">
                 <h2>PORTFOLIO</h2>
             </div>
@@ -133,14 +122,12 @@
             </div>
         </div>
         <!--end portfolio-->
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="col-md-12" id="Skills" style="background-color:#dcd8d8; padding: 2%;">
                 <h2>SKILLS</h2>
                 <div class="row">
                     <div class="alignLeft">
-                        <div class="col-md-4">
-                        </div>
-                        <div class="col-md-4">
+                        <div class="col-md-offset-4 col-md-4">
                             <h4>Web development</h4>
                             <ul>
                                 <li>Illustrator, Photoshop</li>
@@ -157,71 +144,69 @@
                                 <li>Scram, Kanban</li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--end skill-->
+        <div data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>CAREER</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 left" id="Career" style="padding: 2%;">
+                    <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2006 - 2010</h4>
+                    <h4>Software Service Inc — Business analyst</h4>
+                    <p>Osaka Japan<br />Provided electronic medical record /Introduction of new system /Maintenance service /Training staff /Assisted in development of new system</p><br />
+
+                    <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2012 - 2014</h4>
+                    <h4>Supreme — Esthetician</h4>
+                    <p>Osaka Japan<br />Serve clients with a variety of spa treatments, including full facials/ Training staff</p><br />
+
+                    <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2015 - Current</h4>
+                    <h4>Pamper Nail Bar — Nail Technician</h4>
+                    <p>Vancouver, Canada<br />Serve clients with a variety of nail care</p>
+                </div>
+            </div>
+        </div>
+        <!--end CAREER-->
+        <div class="row" data-aos="fade-up" id="contactform" style="background-color:#dcd8d8; padding: 2%;">
+            <div class="col-md-offset-4 col-md-4" id="Contact" style="align:left">
+                <h2><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i>CONTACT</h2>
+                <form id="mainForm" action="#">
+                    <div class="form-group">
+                        <label for="txtContact">Name</label>
+                        <input type="text" id="txtContact" name="contactName" class="form-control" placeholder="Your name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEmail">Your E-mail</label>
+                        <input type="email" id="txtEmail" name="email" class="form-control" placeholder="example@example.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="txtComments">Message</label>
+                        <textarea class="form-control" id="txtComments" name="comments" rows="3"></textarea>
+                    </div>
+                    <input type="hidden" name="to" value="ay36230@gmail.com" />
+                    <button class="btn btn-default hvr-fade">SUBMIT</button><br />
+                    <span id="result"></span>
+                </form>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
-                <h2>CAREER</h2>
+                <p id="pageTop"><a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4 left" id="Career" style="padding: 2%;">
-                <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2006 - 2010</h4>
-                <h4>Software Service Inc — Business analyst</h4>
-                <p>Osaka Japan<br />Provided electronic medical record /Introduction of new system /Maintenance service /Training staff /Assisted in development of new system</p><br />
+        <!--container  -->
 
-                <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2012 - 2014</h4>
-                <h4>Supreme — Esthetician</h4>
-                <p>Osaka Japan<br />Serve clients with a variety of spa treatments, including full facials/ Training staff</p><br />
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script type="text/javascript" src="js/portfolio.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-                <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2015 - Current</h4>
-                <h4>Pamper Nail Bar — Nail Technician</h4>
-                <p>Vancouver, Canada<br />Serve clients with a variety of nail care</p>
-            </div>
-            <div class="col-md-4">
-            </div>
-        </div>
-    </div>
-    <!--end CAREER-->
-    <div class="row" id="contactform" style="background-color:#dcd8d8; padding: 2%;">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4" id="Contact" style="align:left">
-            <h2><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i> CONTACT</h2>
-            <form id="mainForm" action="#">
-                <div class="form-group">
-                    <label for="txtContact">Name</label>
-                    <input type="text" id="txtContact" name="contactName" class="form-control" placeholder="Your name" />
-                </div>
-                <div class="form-group">
-                    <label for="txtEmail">Your E-mail</label>
-                    <input type="email" id="txtEmail" name="email" class="form-control" placeholder="example@example.com" />
-                </div>
-                <div class="form-group">
-                    <label for="txtComments">Message</label>
-                    <textarea class="form-control" id="txtComments" name="comments" rows="3"></textarea>
-                </div>
-                <input type="hidden" name="to" value="ay36230@gmail.com" />
-                <button class="btn btn-default hvr-fade">SUBMIT</button><br />
-                <span id="result"></span>
-            </form>
-        </div>
-        <div class="col-md-4">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <p id="pageTop"><a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></p>
-        </div>
-    </div>
-    <!--container  -->
 </body>
 
 </html>
