@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+ duration: 1800
+});
 
 //Add class="openNav" when clicked drawer menu
 $(function() {
