@@ -1,3 +1,12 @@
+.portfolioArea .janken img,
+.portfolioArea .design img,
+.portfolioArea .insta i{
+  width: 170px;
+  font-size: 170px;
+}
+/*.portfolioArea .insta img{
+    font-size: 170px;
+}*/
 body,a{
   color: #696464;
 }
@@ -14,8 +23,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 [class^='imghvr-'], [class*=' imghvr-'] {
  background-color: white;
 }
+.portfolioArea{
+    margin: 30px;
+  }
 .portfolioArea img{
-  width: 300px;
+  /*width: 300px;*/
 }
 .container{
   margin-left: 0%;
