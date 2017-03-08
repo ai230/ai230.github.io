@@ -10,40 +10,40 @@ $(function() {
 });
 // When menu is clickded scroll to the section
 $(function(){
+  $(".movePortfolio").click(function(){
+      $('body').animate({
+         scrollTop: $("#portfolio").offset().top
+      },1200);
+  });
+});
+$(function(){
   $(".moveAboutme").click(function(){
       $('body').animate({
-         scrollTop: $("#Aboutme").offset().top
+         scrollTop: $("#aboutme").offset().top
       },1200);
   });
 });
 $(function(){
   $(".moveSkills").click(function(){
       $('body').animate({
-         scrollTop: $("#Skills").offset().top
-      },1200);
-  });
-});
-$(function(){
-  $(".movePortfolio").click(function(){
-      $('body').animate({
-         scrollTop: $("#Portfolio").offset().top
+         scrollTop: $("#skills").offset().top
       },1200);
   });
 });
 $(function(){
   $(".moveCareer").click(function(){
       $('body').animate({
-         scrollTop: $("#Career").offset().top
+         scrollTop: $("#career").offset().top
       },1200);
   });
 });
-$(function(){
-  $(".moveContact").click(function(){
-      $('body').animate({
-         scrollTop: $("#Contact").offset().top
-      },1200);
-  });
-});
+// $(function(){
+//   $(".moveContact").click(function(){
+//       $('body').animate({
+//          scrollTop: $("#Contact").offset().top
+//       },1200);
+//   });
+// });
 // ---------------------
 //contact - send a message to me by Luiz's API
 $(function(){
