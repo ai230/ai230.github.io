@@ -1,0 +1,90 @@
+html, body {
+    font-family: $open-sans;
+    height: 100%;
+    text-align: center;
+}
+section{
+    height: 100%;
+    h1{
+    font-family: $monofett;
+  }
+}
+#aboutme{
+    background-color: $bg-color;
+}
+
+.portfolioArea {
+    margin: 30px;
+    img {
+        width: 200px;
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+}
+
+.container {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+
+.top {
+    background-color: $bg-color;
+    height: 100%;
+}
+
+.intro {
+    padding-top: 15%;
+    color: white;
+    text-align: center;
+    width: 100%;
+  span {
+    color: $primary-color;
+  }
+  a{
+    margin: 10px;
+    color: white;
+  }
+  a:hover{
+    color: $primary-color;
+  }
+  img{
+        max-width: 50px;
+    }
+}
+
+/*footer*/
+
+footer {
+    background: $footer-bg-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    img{
+        max-width: 40px;
+    }
+    a{
+        color: white;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/*pageTop*/
+
+#pageTop {
+    position: fixed;
+    bottom: 1%;
+    right: 0%;
+    a {
+        z-index: 10;
+        color: $primary-color;
+        font-size: 80px;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+}

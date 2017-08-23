@@ -9,17 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hover-min.css">
     <link rel="stylesheet" href="css/imagehover.css">
     <link rel="stylesheet" href="css/inview.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <div class="top">
     <header>
-        <!-- <a id="Home" href="index.html"><img src="img/A_logo.png" alt="logo"></a> -->
         <div id="navToggle">
             <div>
                 <span></span> <span></span> <span></span>
@@ -29,21 +29,21 @@
         <nav>
             <ul>
                 <li><a class="moveHome" href="#home">HOME</a></li>
-                <li><a class="movePortfolio" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="movePortfolio" href="#myproject">MY PROJECT</a></li>
                 <li><a class="moveAboutme" href="#aboutme">ABOUT ME</a></li>
-                <li><a class="moveSkills" href="#skills">SKILLS</a></li>
-                <li><a class="moveCareer" href="#career">CAREER</a></li>
+                <li><a class="moveCareer" href="#experience">EXPERIENCE</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container center">
+    <div class="container">
         <div class="row">
             <div class="col-md-12 intro">
+                <a id="Home" href="index.html"><img src="img/logo_white.png" alt="logo"></a>
                 <h1 data-aos="fade-right">Hello!</h1>
                 <h1 data-aos="fade-left">My name is <span>Ai YAMAMOTO.</span></h1>
                 <h1 data-aos="fade-right">I'm a Web Developer.</h1>
-                <hr width="10%" class="center">
+                <hr width="10%">
                 <a href="https://github.com/ai230"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/aiiiii_y"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
@@ -51,10 +51,11 @@
         </div>
     </div>
     </div>
-    <div class="container center portfolio">
+    <section id="myproject">
+        <div class="container">
             <div class="row" data-aos="fade-up">
                 <div class="col-md-12">
-                    <h2>PORTFOLIO</h2>
+                    <h1>MY PROJECT</h1>
                 </div>
                 <div class="row portfolioArea">
                     <div class="col-xs-4 design">
@@ -81,13 +82,16 @@
                 </div>
             </div>
         </div>
+    </section>
+
         <!--end portfolio-->
-        <div>
+        <section id="aboutme">
+            <div class="container">
             <div class="row" id="me" data-aos="fade-up">
-                <div class="col-sm-12" id="aboutme" style="background-color:#dcd8d8; padding: 2%;">
+                <div class="col-sm-12">
                     <div class="row">
-                        <div class="col-sm-offset-3 col-sm-6" id="Aboutme" style="background-color:#dcd8d8;">
-                            <h2>ABOUT ME</h2>
+                        <div class="col-sm-offset-3 col-sm-6" id="Aboutme">
+                            <h1>ABOUT ME</h1>
                             <p>I live in Vancouver Canada.I'm a student at <a href="http://ciccc.ca/web-mobile-app-development-1212-co-op-diploma/">International Community College of Canada(Web and Mobile Application Development</a>.I used to work as Business
                                 Analyst for 5 years in Japan.Now, I work as a Nail Technician.</p>
                         </div>
@@ -95,96 +99,111 @@
                 </div>
             </div>
         </div>
-        <div class="row" data-aos="fade-up">
-            <div class="col-md-12" id="skills">
-                <h2>SKILLS</h2>
-                <div class="row alignLeft">
-                    <div class="col-sm-offset-3 col-sm-3">
-                        <!-- <div class="row bg-danger"> -->
-                        <!-- <div class="col-xs-offset-4 col-xs-4"> -->
-                        <h4>Web development</h4>
-                        <ul>
-                            <li>Illustrator, Photoshop</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Bootstrap</li>
-                            <li>JQuery</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <h4>Team & Tools</h4>
-                        <ul>
-                            <li>GitHub</li>
-                            <li>Agile</li>
-                            <li>Scram, Kanban</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--end skill-->
-    <div class="center" style="background-color:#dcd8d8;" data-aos="fade-up" id="Career">
+        </section>
+
+    <section id="experience">
+        <div class="container" data-aos="fade-up" id="Career">
         <div class="row">
             <div class="col-md-12">
-                <h2>CAREER</h2>
+                <h1>EXPERIENCE</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-offset-4 col-md-4 left">
-                <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2006 - 2010</h4>
-                <h4>Software Service Inc — Business analyst</h4>
-                <p>Osaka Japan</p>
-                <p>Provided electronic medical record</p>
-                <p>Introduction of new system</p>
-                <p>Maintenance service</p>
-                <p>Training staff</p>
-                <p>Assisted in development of new system</p><br />
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <ul class="timeline timeline-centered">
+            <li class="timeline-item period">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">EDUCATION</h1>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span>October 2016 - Current</span>
+                        <h3 class="timeline-title">Cornerstone International Community College of Canada</h3>
+                        <h5>Vancouver, Canada — Diploma</h5>
+                        <p>Mobile Web Application Development</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                    <span>April 2004 - March 2006</span>
+                        <h3 class="timeline-title">Kochi University of Technology</h3>
+                        <h5>Kochi, Japan — Bachelor’s Degree</h5>
+                        <p>Electronic and Photonics Engineering</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                    <span>April 1999 - March 2004</span>
+                        <h3 class="timeline-title">Takuma National College of Technology</h3>
+                        <h5>Kagawa, Japan— Associate’s Degree</h5>
+                        <p>Dept. of Telecommunications</p>
+                    </div>
+                </li>
 
-                <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2012 - 2014</h4>
-                <h4>Supreme — Esthetician</h4>
-                <p>Osaka Japan</p>
-                <p>Serve clients with a variety of spa treatments, including full facials</p>
-                <p>Training staff</p><br />
-
-                <h4><i class="fa fa-pagelines" aria-hidden="true"></i>2015 - Current</h4>
-                <h4>Pamper Nail Bar — Nail Technician</h4>
-                <p>Vancouver, Canada
-                    <p>
-                        <p>Serve clients with a variety of nail care</p>
-            </div>
+                <li class="timeline-item period">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">WORK</h3>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                    <span>April 2017 - Current</span>
+                        <h3 class="timeline-title">Freelance Web Developer</h3>
+                        <p>Nullam vel sem. Nullam vel sem.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                    <span>November 2012 - March 2014</span>
+                        <h3 class="timeline-title">Supreme</h3>
+                        <h5>Osaka, Japan — Esthetician</h5>
+                        <p>Serve clients with a variety of spa treatments, including full facials / Training sta </p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                    <span>April 2006 - September 2010</span>
+                        <h3 class="timeline-title">Software Service Inc</h3>
+                        <h5>Osaka, Japan — Business analyst</h5>
+                        <p>Provided electronic medical records / Introduction of new system /Maintenance service / Training sta  / Assisted in development of new system</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <!--end CAREER-->
-    <!-- <div class="row" data-aos="fade-up" id="contactform" style="background-color:#dcd8d8; padding: 2%;">
-        <div class="col-md-offset-4 col-md-4" id="Contact" style="align:left">
-            <h2><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i>CONTACT</h2>
-            <form id="mainForm" action="#">
-                <div class="form-group">
-                    <label for="txtContact">Name</label>
-                    <input type="text" id="txtContact" name="contactName" class="form-control" placeholder="Your name" />
-                </div>
-                <div class="form-group">
-                    <label for="txtEmail">Your E-mail</label>
-                    <input type="email" id="txtEmail" name="email" class="form-control" placeholder="example@example.com" />
-                </div>
-                <div class="form-group">
-                    <label for="txtComments">Message</label>
-                    <textarea class="form-control" id="txtComments" name="comments" rows="3"></textarea>
-                </div>
-                <input type="hidden" name="to" value="ay36230@gmail.com" />
-                <button class="btn btn-default hvr-fade">SUBMIT</button><br />
-                <span id="result"></span>
-            </form>
-        </div>
-    </div> -->
+    </section>
+
+    <!-- Button pagetop -->
     <div class="row">
         <div class="col-md-12">
             <p id="pageTop"><a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></p>
         </div>
     </div>
     <!--container  -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col">
+                <a class="img-fluid" id="Home" href="index.html"><img src="img/logo_white.png" alt="logo"></a>
+            </div> -->
+            <div class="col">
+                <a href="https://github.com/ai230"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/aiiiii_y"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
 
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
