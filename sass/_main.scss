@@ -1,69 +1,60 @@
-html, body {
+html,
+body {
     font-family: $open-sans;
+    color: $main-font-color;
     height: 100%;
     text-align: center;
 }
 
-section{
+section {
     height: 100%;
-    h1{
-    font-family: $monofett;
-  }
-}
-
-//.vertical-center {
-//  min-height: 100%;
-//  min-height: 100vh;
-//  display: flex;
-//  align-items: center;
-//}
-
-#aboutme{
-    background-color: $bg-color;
-}
-
-.portfolioArea {
-    margin: 30px;
-    img {
-        width: 200px;
-        max-width: 100%;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
-        width: 150px;
+    .title {
+        font-family: $monofett;
     }
 }
 
-.container {
-    margin-left: 0%;
-    margin-right: 0%;
-    width: 100%;
-}
-
-.top {
+#top {
     background-color: $bg-color;
     height: 100%;
 }
 
-.intro {
+#intro {
     padding-top: 15%;
     color: white;
     text-align: center;
     width: 100%;
-  span {
-    color: $primary-color;
-  }
-  a{
-    margin: 10px;
-    color: white;
-  }
-  a:hover{
-    color: $primary-color;
-  }
-  img{
+    span {
+        color: $primary-color;
+    }
+    a {
+        margin: 10px;
+        color: white;
+    }
+    a:hover {
+        color: $primary-color;
+    }
+    img {
         max-width: 50px;
     }
 }
+
+.portfolioArea {
+    padding: 100px;
+}
+
+.portfolio-img {
+    max-width: 70%;
+}
+
+#aboutme {
+    background-color: $bg-color;
+}
+
+//.container {
+//    margin-left: 0%;
+//    margin-right: 0%;
+//    width: 100%;
+//}
 
 /*footer*/
 
@@ -71,15 +62,16 @@ footer {
     background: $footer-bg-color;
     padding-top: 20px;
     padding-bottom: 20px;
-    img{
+    img {
         max-width: 40px;
     }
-    a{
+    a {
         color: white;
         padding-right: 20px;
         padding-left: 20px;
     }
 }
+
 
 /*pageTop*/
 
@@ -92,14 +84,13 @@ footer {
         color: $main-font-color;
         font-size: 50px;
         opacity: 0.8;
-        &:hover{
+        &:hover {
             opacity: 0.5;
         }
     }
-
 }
 
-.pedding-top-bottom{
+.pedding-top-bottom {
     padding-top: 50px;
     padding-bottom: 100px;
 }
