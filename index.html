@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ai Yamamoto</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hover-min.css">
     <link rel="stylesheet" href="css/imagehover.css">
     <link rel="stylesheet" href="css/inview.css">
@@ -18,193 +18,191 @@
 </head>
 
 <body>
-  <div class="top">
-    <header>
-        <div id="navToggle">
-            <div>
-                <span></span> <span></span> <span></span>
+    <div class="top">
+        <header>
+            <div id="navToggle">
+                <div>
+                    <span></span> <span></span> <span></span>
+                </div>
             </div>
-        </div>
-        <!--#navToggle END-->
-        <nav>
-            <ul>
-                <li><a class="moveHome" href="#home">HOME</a></li>
-                <li><a class="movePortfolio" href="#myproject">MY PROJECT</a></li>
-                <li><a class="moveAboutme" href="#aboutme">ABOUT ME</a></li>
-                <li><a class="moveCareer" href="#experience">EXPERIENCE</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 intro">
-                <a id="Home" href="index.html"><img src="img/logo_white.png" alt="logo"></a>
-                <h1 data-aos="fade-right">Hello!</h1>
-                <h1 data-aos="fade-left">My name is <span>Ai YAMAMOTO.</span></h1>
-                <h1 data-aos="fade-right">I'm a Web Developer.</h1>
-                <hr width="10%">
-                <a href="https://github.com/ai230"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/aiiiii_y"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>
-    </div>
-    <section id="myproject">
+            <!--#navToggle END-->
+            <nav>
+                <ul>
+                    <li><a class="moveHome" href="#home">HOME</a></li>
+                    <li><a class="movePortfolio" href="#myproject">MY PROJECT</a></li>
+                    <li><a class="moveAboutme" href="#aboutme">ABOUT ME</a></li>
+                    <li><a class="moveCareer" href="#experience">EXPERIENCE</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="container">
-            <div class="row" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12 intro">
+                    <a id="Home" href="index.html"><img src="img/logo_white.png" alt="logo"></a>
+                    <h1 data-aos="fade-right">Hello!</h1>
+                    <h1 data-aos="fade-left">My name is <span>Ai YAMAMOTO.</span></h1>
+                    <h1 data-aos="fade-right">I'm a Web Developer.</h1>
+                    <hr width="10%">
+                    <a href="https://github.com/ai230"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/aiiiii_y"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="myproject" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-md-12">
                     <h1>MY PROJECT</h1>
                 </div>
                 <div class="row portfolioArea">
-                    <div class="col-xs-4 design">
-                        <a href="https://ai230.github.io/design.html">
+                    <div class="col-4 design">
+                        <a onClick="parent.open('https://ai230.github.io/design.html')" style="cursor:pointer;">
                             <img src="img/portfolioimages/test/MockUp.png" alt="image">
                             <h4>Design</h4>
                             <p>using Illustrator and Photoshop</p>
                         </a>
                     </div>
-                    <div class="col-xs-4 janken">
-                        <a href="https://janken.000webhostapp.com/">
+                    <div class="col-4">
+                        <a onClick="parent.open('https://janken.000webhostapp.com/')" style="cursor:pointer;">
                             <img src="img/portfolioimages/test/janken.png" alt="image">
                             <h4>Janken Game</h4>
                             <p>with HTML CSS Javascript</p>
                         </a>
                     </div>
-                    <div class="col-xs-4 insta">
-                        <a href="https://ai230.github.io/instagram.html">
+                    <div class="col-4">
+                        <a onClick="parent.open('https://ai230.github.io/instagram.html')" style="cursor:pointer;">
                             <img src="img/portfolioimages/test/insta.png" alt="image">
                             <h4>CICCC Project</h4>
                             <p>with instagram API</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a onClick="parent.open('https://ai230.github.io/instagram.html')" style="cursor:pointer;">
+                            <img src="img/android_mytodolist.png" alt="image">
+                            <h4>Android App</h4>
+                            <p>with Android studio</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-        <!--end portfolio-->
-        <section id="aboutme">
-            <div class="container">
-            <div class="row" id="me" data-aos="fade-up">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-offset-3 col-sm-6" id="Aboutme">
-                            <h1>ABOUT ME</h1>
-                            <p>I live in Vancouver Canada.I'm a student at <a href="http://ciccc.ca/web-mobile-app-development-1212-co-op-diploma/">International Community College of Canada(Web and Mobile Application Development</a>.I used to work as Business
-                                Analyst for 5 years in Japan.Now, I work as a Nail Technician.</p>
-                        </div>
+    <!--end portfolio-->
+    <section id="aboutme" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center" id="me" data-aos="fade-up">
+                <div class="col-md-12">
+                    <h1>MY PROJECT</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-offset-3 col-sm-6" id="Aboutme">
+                        <p>I am student at Cornerstone International College in Vancouver. I’m currently in a 2 year Web and Mobile Application course. I have experience using HTML, CSS, Javascript, Objective­C, Swift, Java etc..</p>
+                        <p>I like working on challenging projects which is why I enjoy working in this field. I like to take the knowledge I have gained and apply it to every assignment or task given to me. My knowledge also includes experience with iOS development on Xcode with database and Android development on android studio.</p>
                     </div>
                 </div>
             </div>
         </div>
-        </section>
-
+    </section>
     <section id="experience">
-        <div class="container" data-aos="fade-up" id="Career">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>EXPERIENCE</h1>
+        <div class="container pedding-top-bottom" data-aos="fade-up" id="Career">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h1>EXPERIENCE</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                    <ul class="timeline timeline-centered">
+                        <li class="timeline-item period">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">EDUCATION</h3>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span>October 2016 - Current</span>
+                                <h3 class="timeline-title">Cornerstone International Community College of Canada</h3>
+                                <h5>Vancouver, Canada — Diploma</h5>
+                                <p>Mobile Web Application Development</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span>April 2004 - March 2006</span>
+                                <h3 class="timeline-title">Kochi University of Technology</h3>
+                                <h5>Kochi, Japan — Bachelor’s Degree</h5>
+                                <p>Electronic and Photonics Engineering</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span>April 1999 - March 2004</span>
+                                <h3 class="timeline-title">Takuma National College of Technology</h3>
+                                <h5>Kagawa, Japan— Associate’s Degree</h5>
+                                <p>Dept. of Telecommunications</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item period">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">WORK</h3>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span>April 2017 - Current</span>
+                                <h3 class="timeline-title">Freelance Web Developer</h3>
+                                <p>Nullam vel sem. Nullam vel sem.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span>November 2012 - March 2014</span>
+                                <h3 class="timeline-title">Supreme</h3>
+                                <h5>Osaka, Japan — Esthetician</h5>
+                                <p>Serve clients with a variety of spa treatments, including full facials / Training sta </p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span>April 2006 - September 2010</span>
+                                <h3 class="timeline-title">Software Service Inc</h3>
+                                <h5>Osaka, Japan — Business analyst</h5>
+                                <p>Provided electronic medical records / Introduction of new system /Maintenance service / Training sta / Assisted in development of new system</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-            <ul class="timeline timeline-centered">
-            <li class="timeline-item period">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">EDUCATION</h1>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span>October 2016 - Current</span>
-                        <h3 class="timeline-title">Cornerstone International Community College of Canada</h3>
-                        <h5>Vancouver, Canada — Diploma</h5>
-                        <p>Mobile Web Application Development</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                    <span>April 2004 - March 2006</span>
-                        <h3 class="timeline-title">Kochi University of Technology</h3>
-                        <h5>Kochi, Japan — Bachelor’s Degree</h5>
-                        <p>Electronic and Photonics Engineering</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                    <span>April 1999 - March 2004</span>
-                        <h3 class="timeline-title">Takuma National College of Technology</h3>
-                        <h5>Kagawa, Japan— Associate’s Degree</h5>
-                        <p>Dept. of Telecommunications</p>
-                    </div>
-                </li>
-
-                <li class="timeline-item period">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">WORK</h3>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                    <span>April 2017 - Current</span>
-                        <h3 class="timeline-title">Freelance Web Developer</h3>
-                        <p>Nullam vel sem. Nullam vel sem.</p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                    <span>November 2012 - March 2014</span>
-                        <h3 class="timeline-title">Supreme</h3>
-                        <h5>Osaka, Japan — Esthetician</h5>
-                        <p>Serve clients with a variety of spa treatments, including full facials / Training sta </p>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                    <span>April 2006 - September 2010</span>
-                        <h3 class="timeline-title">Software Service Inc</h3>
-                        <h5>Osaka, Japan — Business analyst</h5>
-                        <p>Provided electronic medical records / Introduction of new system /Maintenance service / Training sta  / Assisted in development of new system</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
     </section>
-
     <!-- Button pagetop -->
     <div class="row">
         <div class="col-md-12">
-            <p id="pageTop"><a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></p>
+            <p id="pageTop"><a href="#"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a></p>
         </div>
     </div>
     <!--container  -->
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <!-- <div class="col">
-                <a class="img-fluid" id="Home" href="index.html"><img src="img/logo_white.png" alt="logo"></a>
-            </div> -->
-            <div class="col">
+    <footer class="fixed-bottom">
+        <!-- <div class="container"> -->
+            <div class="row">
+            <div class="col-md-12">
                 <a href="https://github.com/ai230"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/aiiiii_y"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
             </div>
         </div>
-    </div>
-
-</footer>
-
+        <!-- </div> -->
+    </footer>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
