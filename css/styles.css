@@ -254,6 +254,8 @@ footer {
     color: white;
     padding-right: 20px;
     padding-left: 20px; }
+  footer .fa:hover {
+    color: #EF788C; }
 
 /*pageTop*/
 #pageTop {
