@@ -32,14 +32,6 @@
 <body>
     <div id="top">
         <header>
-            <!--
-            <div id="navToggle">
-                <div>
-                    <span></span> <span></span> <span></span>
-                </div>
-            </div>
--->
-            <!--#navToggle END-->
             <nav>
                 <ul>
                     <li><a class="moveHome" href="#home">HOME</a></li>
@@ -51,12 +43,11 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="col-md-12" id="intro">
+                <div class="col-12" id="intro" data-aos="fade-up">
                     <a id="Home" href="index.html"><img src="img/logo_white.png" alt="logo"></a>
-                    <h1 data-aos="fade-right">Hello!</h1>
-                    <h1 data-aos="fade-left">My name is <span>Ai YAMAMOTO.</span></h1>
-                    <h1 data-aos="fade-right">I'm a Software Developer.</h1>
-                    <hr width="10%">
+                    <h1>Hello!</h1>
+                    <h1>My name is <span>Ai YAMAMOTO.</span></h1>
+                    <h1>I'm a Software Developer.</h1>
                 </div>
             </div>
         </div>
@@ -102,13 +93,14 @@
                 <div class="col-12">
                     <img style="max-width: 60px;" src="img/android_mytodolist.png">
                     <span>My Todolist</span>
-                    <div class="offset-3 col-6">
-                        <a onClick="parent.open('https://play.google.com/store/apps/details?id=com.project.ai.todolist')" style="cursor:pointer;">
-                            <p style="color: #a7f3d1;">https://play.google.com/store/apps/details?id=com.project.ai.todolist</p>
-                        </a>
-                        <a class="padding-top-bottom50" onClick="parent.open('https://github.com/ai230/andoroid/tree/master/TODOLIST')" style="cursor:pointer;">
-                            <i style="color: #7b7e80;" class="fa fa-github-alt padding-top-bottom50" aria-hidden="true">https://github.com/ai230/andoroid/tree/master/TODOLIST</i>
-                        </a>
+
+                    <a onClick="parent.open('https://play.google.com/store/apps/details?id=com.project.ai.todolist')" style="cursor:pointer;">
+                        <p style="color: #a7f3d1;">https://play.google.com/store/apps/details?id=com.project.ai.todolist</p>
+                    </a>
+                    <a class="padding-top-bottom50" onClick="parent.open('https://github.com/ai230/andoroid/tree/master/TODOLIST')" style="cursor:pointer;">
+                        <i style="color: #7b7e80;" class="fa fa-github-alt padding-top-bottom50" aria-hidden="true">https://github.com/ai230/andoroid/tree/master/TODOLIST</i>
+                    </a>
+                    <div class="offset-2 col-8">
                         <p>We all have lots of to do in our daily life, but we don’t want to forget to do any of the important stuff. This app will keep all your tasks for you, and remind you about them.</p>
                     </div>
                     <img class="portfolio-img img-fluid" src="img/android_mockup_app.png">
