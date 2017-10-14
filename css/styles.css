@@ -243,13 +243,13 @@ section .title {
 
 /*footer*/
 footer {
+  color: white;
   background: #333;
   padding-top: 20px;
   padding-bottom: 20px; }
   footer img {
     max-width: 40px; }
   footer a {
-    color: white;
     padding-right: 20px;
     padding-left: 20px; }
   footer .fa:hover {
