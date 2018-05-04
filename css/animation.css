@@ -1,0 +1,7 @@
+.anim {
+	animation: vertical 1s ease-in-out infinite alternate;
+}
+@keyframes vertical {
+    0% { transform:translateY(-10px); }
+  100% { transform:translateY(  0px); }
+}
